@@ -66,11 +66,6 @@ class HopcroftKarp(object):
                 return layers  # break
                 # break
 
-    # --------------------------------------------------------------------------------------------------------------
-    # if we are able to collate these free vertices, we run DFS recursively on each of them
-    # this algorithm finds a maximal set of vertex disjoint augmenting paths of length k (shortest path),
-    # stores them in P and increments M...
-    # --------------------------------------------------------------------------------------------------------------
     def __dfs(self, v, index, layers):
         """
         we recursively run dfs on each vertices in free_vertex,
