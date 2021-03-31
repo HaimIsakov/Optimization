@@ -1,5 +1,4 @@
-# Python program to find
-# maximal Bipartite matching.
+
 
 class GFG:
     def __init__(self, adj, size):
@@ -67,16 +66,3 @@ class GFG:
             if value != -1:
                 matching[value] = i + self.size
         return matching
-
-if __name__ == "__main__":
-    bpGraph = [[0, 1, 1, 0, 0, 0],
-               [1, 0, 0, 1, 0, 0],
-               [0, 0, 1, 0, 0, 0],
-               [0, 0, 1, 1, 0, 0],
-               [0, 0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0, 1]]
-    # g = GFG(bpGraph, 6)
-
-    print("Maximum number of applicants that can get job is %d " % g.maxBPM())
-
-# This code is contributed by Neelam Yadav
